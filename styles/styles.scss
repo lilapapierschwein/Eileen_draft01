@@ -28,17 +28,18 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 6%;
 
     .navbar{
         // background-color: aqua;
         position: fixed;
         top: 1%;
         width: 60%;
-        height: 4rem;
+        min-height: 6%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        align-items: baseline;
+        justify-content: space-evenly;
         transition: all .4s ease-in-out;
         // background-color: coral;
 
@@ -50,13 +51,16 @@ body{
         }
 
         .navlink{
-            padding: 1.5rem;
             cursor: pointer;
             display: flex;
+            flex-grow: .5;
+            padding-right: 1.5%;
+            // margin-right: -12.5%;
+            justify-content: right;
         }
 
         .header-name{
-            padding-left: 1rem;
+            padding-left: 1.5%;
             display: flex;
             flex-grow: 1;
             font-size: 2.5rem;
@@ -73,21 +77,21 @@ body{
 
     .header-rule1{
         width: 58.5%;
-        position: fixed;
+        position: relative;
         height: .05rem;
         background-color: black;
-        top: 8.5%;
+        top: 50%;
         border: 0;
     }
 
     .alt-nav{
         width: 60%;
-        position: fixed;
+        position: relative;
         display: none;
         align-items: center;
         justify-content: space-between;
         // background-color: darkblue;
-        top: 9.5%;
+        top: 35%;
         padding-left: .5rem;
         padding-right: .5rem;
 
@@ -104,10 +108,10 @@ body{
     .header-rule2{
         display: none;
         width: 58.5%;
-        position: fixed;
+        position: relative;
         height: .05rem;
         background-color: black;
-        top: 12.5%;
+        top: 50%;
         border: 0;
     }
 }
@@ -299,10 +303,12 @@ section{
     
     .site-header{
 
+        // height: 15%;
+
         .navbar{
             // background-color: aqua;
             width: 70%;
-            height: 4rem;
+            // height: 4rem;
 
             .header-name{
                 flex-grow:.5;
@@ -334,6 +340,7 @@ section{
 @media(max-width: 1279px){
     
     .site-header{
+
 
         .navbar{
             // background-color: rgb(204, 0, 255);
@@ -389,6 +396,7 @@ section{
         .navbar{
             // background-color: rgb(204, 0, 255);
             width: 90%;
+            align-items: baseline;
 
             .header-name{
                 font-size: 1.5rem;
@@ -451,10 +459,13 @@ section{
     
     .site-header{
 
+        height: 8.5%;
+
         .navbar{
             // background-color: rgb(204, 0, 255);
             width: 90%;
             top: .1%;
+            align-items:center;
 
             .header-name{
                 font-size: 1.5rem;
@@ -472,6 +483,7 @@ section{
 
         .header-rule1{
             width: 88%;
+            top: 25%;
         }
 
         .alt-nav{
@@ -512,7 +524,7 @@ section{
     section{
         width: 90%;
         padding: .5rem;
-        top: 13%;
+        top: 10%;
         font-size: .7rem;
         min-height: 20vh;
     }

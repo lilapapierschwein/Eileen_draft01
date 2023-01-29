@@ -39,13 +39,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 6%;
 }
 
 .site-header .navbar {
   position: fixed;
   top: 1%;
   width: 60%;
-  height: 4rem;
+  min-height: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,12 +54,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -74,15 +75,21 @@ body {
 }
 
 .site-header .navbar .navlink {
-  padding: 1.5rem;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: .5;
+      -ms-flex-positive: .5;
+          flex-grow: .5;
+  padding-right: 1.5%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .site-header .navbar .header-name {
-  padding-left: 1rem;
+  padding-left: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,16 +108,16 @@ body {
 
 .site-header .header-rule1 {
   width: 58.5%;
-  position: fixed;
+  position: relative;
   height: .05rem;
   background-color: black;
-  top: 8.5%;
+  top: 50%;
   border: 0;
 }
 
 .site-header .alt-nav {
   width: 60%;
-  position: fixed;
+  position: relative;
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -118,7 +125,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 9.5%;
+  top: 35%;
   padding-left: .5rem;
   padding-right: .5rem;
 }
@@ -138,10 +145,10 @@ body {
 .site-header .header-rule2 {
   display: none;
   width: 58.5%;
-  position: fixed;
+  position: relative;
   height: .05rem;
   background-color: black;
-  top: 12.5%;
+  top: 50%;
   border: 0;
 }
 
@@ -384,7 +391,6 @@ section {
 @media (max-width: 1500px) {
   .site-header .navbar {
     width: 70%;
-    height: 4rem;
   }
   .site-header .navbar .header-name {
     -webkit-box-flex: .5;
@@ -442,6 +448,9 @@ section {
 @media (max-width: 1000px) {
   .site-header .navbar {
     width: 90%;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .site-header .navbar .header-name {
     font-size: 1.5rem;
@@ -483,9 +492,15 @@ section {
 }
 
 @media (max-width: 500px) {
+  .site-header {
+    height: 8.5%;
+  }
   .site-header .navbar {
     width: 90%;
     top: .1%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .site-header .navbar .header-name {
     font-size: 1.5rem;
@@ -501,6 +516,7 @@ section {
   }
   .site-header .header-rule1 {
     width: 88%;
+    top: 25%;
   }
   .site-header .alt-nav {
     display: -webkit-box;
@@ -533,7 +549,7 @@ section {
   section {
     width: 90%;
     padding: .5rem;
-    top: 13%;
+    top: 10%;
     font-size: .7rem;
     min-height: 20vh;
   }
