@@ -497,7 +497,7 @@ section {
 
 @media (max-width: 500px) {
   .site-header {
-    height: 8.5%;
+    height: 10%;
   }
   .site-header .navbar {
     width: 90%;
@@ -577,6 +577,9 @@ section {
 }
 
 @media (max-height: 500px) {
+  .site-header {
+    height: 16%;
+  }
   .site-header .navbar {
     top: .1%;
     width: 90%;
