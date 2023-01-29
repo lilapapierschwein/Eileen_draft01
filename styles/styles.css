@@ -54,6 +54,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  justify-items: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -111,7 +112,7 @@ body {
   position: relative;
   height: .05rem;
   background-color: black;
-  top: 50%;
+  top: 80%;
   border: 0;
 }
 
@@ -125,7 +126,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 35%;
+  top: 42.5%;
   padding-left: .5rem;
   padding-right: .5rem;
 }
@@ -171,7 +172,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top: 9%;
+  top: 8%;
   bottom: 10%;
   overflow-y: auto;
   padding: 1rem;
@@ -400,6 +401,7 @@ section {
   }
   .site-header .header-rule1 {
     width: 68.5%;
+    top: 80%;
   }
   section {
     width: 70%;
@@ -424,6 +426,7 @@ section {
   }
   .site-header .header-rule1 {
     width: 78%;
+    top: 75%;
   }
   section {
     width: 80%;
@@ -461,6 +464,7 @@ section {
   }
   .site-header .header-rule1 {
     width: 88%;
+    top: 70%;
   }
   section {
     width: 90%;
@@ -497,13 +501,14 @@ section {
   }
   .site-header .navbar {
     width: 90%;
+    height: 6%;
     top: .1%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .site-header .navbar .header-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: .5rem;
   }
   .site-header .navbar .navlink {
@@ -516,7 +521,7 @@ section {
   }
   .site-header .header-rule1 {
     width: 88%;
-    top: 25%;
+    top: 35%;
   }
   .site-header .alt-nav {
     display: -webkit-box;
