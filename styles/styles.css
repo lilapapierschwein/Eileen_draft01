@@ -75,7 +75,6 @@ body {
 
 .site-header .navbar .navlink {
   padding: 1.5rem;
-  padding-top: 2rem;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,12 +303,12 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -336,18 +335,20 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   width: 30%;
+  padding: 1rem;
 }
 
 .site-footer .footer-infos .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -12.5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
   width: 30%;
 }
 
@@ -368,7 +369,9 @@ section {
 }
 
 .site-footer .footer-infos .nav-7 {
-  margin-right: -17.5%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .view-blocker {
