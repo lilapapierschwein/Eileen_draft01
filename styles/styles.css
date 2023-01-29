@@ -554,7 +554,7 @@ section {
   section {
     width: 90%;
     padding: .5rem;
-    top: 11%;
+    top: 12%;
     font-size: .7rem;
     min-height: 20vh;
   }
@@ -593,7 +593,7 @@ section {
     padding-right: .75rem;
   }
   .site-header .header-rule1 {
-    top: 20%;
+    top: 17.5%;
     width: 88%;
   }
   .sec5 .contact-form .sender-info {
@@ -616,7 +616,7 @@ section {
     width: 90%;
     padding-left: .625rem;
     padding-right: .625rem;
-    top: 17%;
+    top: 12.5%;
     font-size: .7rem;
     min-height: 5vh;
   }
