@@ -547,6 +547,12 @@ section {
   .site-footer .footer-infos {
     width: 90%;
   }
+  .site-footer .footer-infos .social-icons {
+    padding: .5rem;
+  }
+  .site-footer .footer-infos .navlink {
+    padding: .5rem;
+  }
 }
 
 @media (max-height: 500px) {
