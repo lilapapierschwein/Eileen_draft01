@@ -267,7 +267,6 @@ section{
 
         .social-icons{
             display: flex;
-            margin-left: -12.5%;
             align-items: center;
             justify-content:space-around;
             width: 30%;
@@ -279,11 +278,6 @@ section{
             a:hover   {color: var(--color-nav-primary)}
             a:active  {color: var(--color-nav-primary)}
         }
-
-        .nav-7{
-            margin-right: -17.5%;
-        }
-
     }
 }
 
