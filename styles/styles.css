@@ -282,18 +282,19 @@ section {
   width: 100%;
   top: 95%;
   position: fixed;
-  background-color: cadetblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .site-footer .footer-infos {
+  padding: none;
   position: fixed;
   width: 60%;
   display: -webkit-box;
@@ -303,12 +304,12 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
@@ -334,20 +335,20 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 33%;
+  width: 30%;
 }
 
 .site-footer .footer-infos .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -12.5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 33%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
 }
 
 .site-footer .footer-infos .social-icons a {
@@ -364,6 +365,10 @@ section {
 
 .site-footer .footer-infos .social-icons a:active {
   color: var(--color-nav-primary);
+}
+
+.site-footer .footer-infos .nav-7 {
+  margin-right: -17.5%;
 }
 
 .view-blocker {
